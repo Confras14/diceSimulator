@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1f1f1f;
+  color: #fefefe;
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.cardDice {
+  background: #111;
+  
+  margin-inline: auto;
+  width: 25rem;
+  height: 35rem;
+  padding: 4rem;
+  border-radius: 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lengthDice {
+  width: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & p {
+    font-size: 1.8rem;
+  }
+  
+  & .buttons {
+    margin-block: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1rem;
+    width: 100%;
+
+    & .btnPick {
+      font-size: 1.125rem;
+
+      height: 2.5rem;
+      width: 3.5rem;
+      border-radius: 8px;
+      border: none;
+    }
+  }
+}
+
+.outputDice {
+  color: #fefefe;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.playDice {
+  width: auto;
+  height: 3rem;
+  border-radius: 8px;
+  border: none;
+
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.diceHistoryContainer {
+  
+  background: #111;
+  width: 15rem;
+  height: 100vh;
+  padding: 1.5rem;
+
+  & > p {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #fefefe;
+  }
+
+  & .diceHistoryAll {
+    display: flex;
+
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    justify-content: space-between;
+
+    & .diceHistoryList {
+      width: 5rem;
+
+      & > p {
+        font-weight: 700;
+        font-size: 1.35rem;
+        text-align: center;
+        margin-bottom: .5rem;
+      }
+
+      & ul li {
+        list-style: none;
+        color: #f0f0f0;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    background: #fff;
+  }
+}
