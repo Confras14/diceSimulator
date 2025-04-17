@@ -92,7 +92,6 @@ body {
 
   & .diceHistoryAll {
     display: flex;
-
     flex-wrap: wrap;
     row-gap: 1rem;
     justify-content: space-between;
@@ -119,6 +118,46 @@ body {
 
 @media (max-width: 1000px) {
   body {
-    background: #fff;
+    flex-direction: column;
+  }
+
+  .cardDice {
+    margin-block: auto;
+    margin-top: 2rem;
+  }
+
+  .diceHistoryContainer {
+    margin-top: 7.5rem;
+    width: 100vw;
+
+    & .diceHistoryAll {
+        row-gap: 3rem;
+    
+      & .diceHistoryList {
+        width: 7rem;
+        flex: 1 1 25%;
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .cardDice {
+    padding: 2rem;
+    width: 19rem;
+    height: 55vh;
+  }
+
+  .lengthDice {
+    width: 15rem;
+    text-align: center;
+
+    & .buttons {
+      justify-content: space-around;
+
+      & .btnPick {
+        width: 4rem;
+      }
+    }
   }
 }
